@@ -2,8 +2,9 @@
 
 // for use by Simbakior applications
 
-#include <stdio.h>
+
 #include "Simbakior/Application.h"
+#include "Simbakior/Log.h"
 
 // -----Entry Point---------------------
 #include "Simbakior/EntryPoint.h"
