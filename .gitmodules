@@ -1,0 +1,3 @@
+[submodule "Simbakior/vendor/spdlog"]
+	path = Simbakior/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
