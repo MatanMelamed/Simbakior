@@ -11,6 +11,12 @@ workspace "Simbakior"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+--Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Simbakior/vendor/GLFW/include"
+
+include "Simbakior/vendor/GLFW"
+
 project "Simbakior"
 	location "Simbakior"
 	kind "SharedLib"
@@ -31,7 +37,14 @@ project "Simbakior"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

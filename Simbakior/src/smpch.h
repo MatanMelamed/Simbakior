@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Simbakior/Log.h"
 
 #ifdef SM_PLATFORM_WINDOWS
 	#include <Windows.h>
