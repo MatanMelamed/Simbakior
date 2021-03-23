@@ -4,6 +4,7 @@
 
 
 #include "Simbakior/Application.h"
+#include "Simbakior/Layer.h"
 #include "Simbakior/Log.h"
 
 // -----Entry Point---------------------

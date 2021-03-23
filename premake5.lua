@@ -65,14 +65,17 @@ project "Simbakior"
 
 	filter "configurations:Debug"
 		defines "SM_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SM_Release"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "SM_Dist"
+		buildoptions "/MD"
 		symbols "On"
 
 project "Sandbox"
@@ -112,12 +115,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "SM_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SM_Release"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "SM_Dist"
+		buildoptions "/MD"
 		symbols "On"
