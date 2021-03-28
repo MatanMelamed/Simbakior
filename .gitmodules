@@ -4,3 +4,6 @@
 [submodule "Simbakior/vendor/GLFW"]
 	path = Simbakior/vendor/GLFW
 	url = https://github.com/MatanMelamed/glfw.git
+[submodule "Simbakior/vendor/imgui"]
+	path = Simbakior/vendor/imgui
+	url = https://github.com/MatanMelamed/imgui.git
